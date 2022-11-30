@@ -1,0 +1,1031 @@
+.flake {
+    position: absolute;
+    top: -100vh;
+    transform-style: preserve-3d;
+}
+
+.flake:nth-child(1) {
+    --duration: 8270ms;
+    --delay: 6011ms;
+    --startrotate: 166deg;
+    --endrotate: 147deg;
+    --opacity: 0.25;
+    --R: 197;
+    --G: 192;
+    --B: 226;
+    animation: fall var(--duration) var(--delay) linear infinite;
+    left: 29vw;
+    transform: translateZ(-54px);
+}
+
+.flake:nth-child(1) .shape {
+    animation: rotate var(--duration) var(--delay) linear infinite;
+    color: rgba(0, 0, 0, var);
+    transform: rotate(var(--startrotate));
+}
+
+.flake:nth-child(1) .shape::before {
+    content: var(--flake3);
+    font-size: 22px;
+}
+
+.flake:nth-child(2) {
+    --duration: 9386ms;
+    --delay: 4304ms;
+    --startrotate: 132deg;
+    --endrotate: 60deg;
+    --opacity: 0.37;
+    --R: 183;
+    --G: 173;
+    --B: 251;
+    animation: fall var(--duration) var(--delay) linear infinite;
+    left: -16vw;
+    transform: translateZ(253px);
+}
+
+.flake:nth-child(2) .shape {
+    animation: rotate var(--duration) var(--delay) linear infinite;
+    color: rgba(0, 0, 0, var);
+    transform: rotate(var(--startrotate));
+}
+
+.flake:nth-child(2) .shape::before {
+    content: var(--flake3);
+    font-size: 18px;
+}
+
+.flake:nth-child(3) {
+    --duration: 9705ms;
+    --delay: 9342ms;
+    --startrotate: 109deg;
+    --endrotate: 145deg;
+    --opacity: 0.36;
+    --R: 201;
+    --G: 200;
+    --B: 244;
+    animation: fall var(--duration) var(--delay) linear infinite;
+    left: 24vw;
+    transform: translateZ(85px);
+}
+
+.flake:nth-child(3) .shape {
+    animation: rotate var(--duration) var(--delay) linear infinite;
+    color: rgba(0, 0, 0, var);
+    transform: rotate(var(--startrotate));
+}
+
+.flake:nth-child(3) .shape::before {
+    content: var(--flake2);
+    font-size: 28px;
+}
+
+.flake:nth-child(4) {
+    --duration: 8565ms;
+    --delay: 6020ms;
+    --startrotate: 205deg;
+    --endrotate: 294deg;
+    --opacity: 0.38;
+    --R: 174;
+    --G: 170;
+    --B: 236;
+    animation: fall var(--duration) var(--delay) linear infinite;
+    left: -31vw;
+    transform: translateZ(18px);
+}
+
+.flake:nth-child(4) .shape {
+    animation: rotate var(--duration) var(--delay) linear infinite;
+    color: rgba(0, 0, 0, var);
+    transform: rotate(var(--startrotate));
+}
+
+.flake:nth-child(4) .shape::before {
+    content: var(--flake1);
+    font-size: 24px;
+}
+
+.flake:nth-child(5) {
+    --duration: 9202ms;
+    --delay: 9042ms;
+    --startrotate: 340deg;
+    --endrotate: 140deg;
+    --opacity: 0.3;
+    --R: 175;
+    --G: 171;
+    --B: 218;
+    animation: fall var(--duration) var(--delay) linear infinite;
+    left: -15vw;
+    transform: translateZ(444px);
+}
+
+.flake:nth-child(5) .shape {
+    animation: rotate var(--duration) var(--delay) linear infinite;
+    color: rgba(0, 0, 0, var);
+    transform: rotate(var(--startrotate));
+}
+
+.flake:nth-child(5) .shape::before {
+    content: var(--flake3);
+    font-size: 28px;
+}
+
+.flake:nth-child(6) {
+    --duration: 8910ms;
+    --delay: 6877ms;
+    --startrotate: 127deg;
+    --endrotate: 148deg;
+    --opacity: 0.31;
+    --R: 190;
+    --G: 195;
+    --B: 247;
+    animation: fall var(--duration) var(--delay) linear infinite;
+    left: -27vw;
+    transform: translateZ(236px);
+}
+
+.flake:nth-child(6) .shape {
+    animation: rotate var(--duration) var(--delay) linear infinite;
+    color: rgba(0, 0, 0, var);
+    transform: rotate(var(--startrotate));
+}
+
+.flake:nth-child(6) .shape::before {
+    content: var(--flake3);
+    font-size: 20px;
+}
+
+.flake:nth-child(7) {
+    --duration: 8715ms;
+    --delay: 5190ms;
+    --startrotate: 184deg;
+    --endrotate: 250deg;
+    --opacity: 0.24;
+    --R: 179;
+    --G: 200;
+    --B: 242;
+    animation: fall var(--duration) var(--delay) linear infinite;
+    left: 24vw;
+    transform: translateZ(85px);
+}
+
+.flake:nth-child(7) .shape {
+    animation: rotate var(--duration) var(--delay) linear infinite;
+    color: rgba(0, 0, 0, var);
+    transform: rotate(var(--startrotate));
+}
+
+.flake:nth-child(7) .shape::before {
+    content: var(--flake3);
+    font-size: 21px;
+}
+
+.flake:nth-child(8) {
+    --duration: 8663ms;
+    --delay: 9363ms;
+    --startrotate: 327deg;
+    --endrotate: 38deg;
+    --opacity: 0.38;
+    --R: 179;
+    --G: 183;
+    --B: 251;
+    animation: fall var(--duration) var(--delay) linear infinite;
+    left: -11vw;
+    transform: translateZ(339px);
+}
+
+.flake:nth-child(8) .shape {
+    animation: rotate var(--duration) var(--delay) linear infinite;
+    color: rgba(0, 0, 0, var);
+    transform: rotate(var(--startrotate));
+}
+
+.flake:nth-child(8) .shape::before {
+    content: var(--flake3);
+    font-size: 18px;
+}
+
+.flake:nth-child(9) {
+    --duration: 9337ms;
+    --delay: 5326ms;
+    --startrotate: 90deg;
+    --endrotate: 189deg;
+    --opacity: 0.4;
+    --R: 176;
+    --G: 201;
+    --B: 227;
+    animation: fall var(--duration) var(--delay) linear infinite;
+    left: -7vw;
+    transform: translateZ(461px);
+}
+
+.flake:nth-child(9) .shape {
+    animation: rotate var(--duration) var(--delay) linear infinite;
+    color: rgba(0, 0, 0, var);
+    transform: rotate(var(--startrotate));
+}
+
+.flake:nth-child(9) .shape::before {
+    content: var(--flake2);
+    font-size: 18px;
+}
+
+.flake:nth-child(10) {
+    --duration: 9037ms;
+    --delay: 8193ms;
+    --startrotate: 54deg;
+    --endrotate: 86deg;
+    --opacity: 0.28;
+    --R: 172;
+    --G: 199;
+    --B: 225;
+    animation: fall var(--duration) var(--delay) linear infinite;
+    left: -27vw;
+    transform: translateZ(327px);
+}
+
+.flake:nth-child(10) .shape {
+    animation: rotate var(--duration) var(--delay) linear infinite;
+    color: rgba(0, 0, 0, var);
+    transform: rotate(var(--startrotate));
+}
+
+.flake:nth-child(10) .shape::before {
+    content: var(--flake2);
+    font-size: 30px;
+}
+
+.flake:nth-child(11) {
+    --duration: 8458ms;
+    --delay: 9323ms;
+    --startrotate: 123deg;
+    --endrotate: 3deg;
+    --opacity: 0.21;
+    --R: 189;
+    --G: 176;
+    --B: 244;
+    animation: fall var(--duration) var(--delay) linear infinite;
+    left: -8vw;
+    transform: translateZ(100px);
+}
+
+.flake:nth-child(11) .shape {
+    animation: rotate var(--duration) var(--delay) linear infinite;
+    color: rgba(0, 0, 0, var);
+    transform: rotate(var(--startrotate));
+}
+
+.flake:nth-child(11) .shape::before {
+    content: var(--flake3);
+    font-size: 28px;
+}
+
+.flake:nth-child(12) {
+    --duration: 9745ms;
+    --delay: 3636ms;
+    --startrotate: 198deg;
+    --endrotate: 306deg;
+    --opacity: 0.38;
+    --R: 195;
+    --G: 177;
+    --B: 230;
+    animation: fall var(--duration) var(--delay) linear infinite;
+    left: 26vw;
+    transform: translateZ(404px);
+}
+
+.flake:nth-child(12) .shape {
+    animation: rotate var(--duration) var(--delay) linear infinite;
+    color: rgba(0, 0, 0, var);
+    transform: rotate(var(--startrotate));
+}
+
+.flake:nth-child(12) .shape::before {
+    content: var(--flake2);
+    font-size: 28px;
+}
+
+.flake:nth-child(13) {
+    --duration: 9392ms;
+    --delay: 5845ms;
+    --startrotate: 245deg;
+    --endrotate: 289deg;
+    --opacity: 0.3;
+    --R: 199;
+    --G: 191;
+    --B: 227;
+    animation: fall var(--duration) var(--delay) linear infinite;
+    left: -21vw;
+    transform: translateZ(290px);
+}
+
+.flake:nth-child(13) .shape {
+    animation: rotate var(--duration) var(--delay) linear infinite;
+    color: rgba(0, 0, 0, var);
+    transform: rotate(var(--startrotate));
+}
+
+.flake:nth-child(13) .shape::before {
+    content: var(--flake3);
+    font-size: 27px;
+}
+
+.flake:nth-child(14) {
+    --duration: 8055ms;
+    --delay: 4282ms;
+    --startrotate: 8deg;
+    --endrotate: 253deg;
+    --opacity: 0.26;
+    --R: 195;
+    --G: 173;
+    --B: 232;
+    animation: fall var(--duration) var(--delay) linear infinite;
+    left: -24vw;
+    transform: translateZ(63px);
+}
+
+.flake:nth-child(14) .shape {
+    animation: rotate var(--duration) var(--delay) linear infinite;
+    color: rgba(0, 0, 0, var);
+    transform: rotate(var(--startrotate));
+}
+
+.flake:nth-child(14) .shape::before {
+    content: var(--flake2);
+    font-size: 20px;
+}
+
+.flake:nth-child(15) {
+    --duration: 8804ms;
+    --delay: 9321ms;
+    --startrotate: 70deg;
+    --endrotate: 305deg;
+    --opacity: 0.32;
+    --R: 177;
+    --G: 179;
+    --B: 224;
+    animation: fall var(--duration) var(--delay) linear infinite;
+    left: 30vw;
+    transform: translateZ(-156px);
+}
+
+.flake:nth-child(15) .shape {
+    animation: rotate var(--duration) var(--delay) linear infinite;
+    color: rgba(0, 0, 0, var);
+    transform: rotate(var(--startrotate));
+}
+
+.flake:nth-child(15) .shape::before {
+    content: var(--flake1);
+    font-size: 20px;
+}
+
+.flake:nth-child(16) {
+    --duration: 8723ms;
+    --delay: 4776ms;
+    --startrotate: 25deg;
+    --endrotate: 353deg;
+    --opacity: 0.28;
+    --R: 168;
+    --G: 199;
+    --B: 232;
+    animation: fall var(--duration) var(--delay) linear infinite;
+    left: -12vw;
+    transform: translateZ(-107px);
+}
+
+.flake:nth-child(16) .shape {
+    animation: rotate var(--duration) var(--delay) linear infinite;
+    color: rgba(0, 0, 0, var);
+    transform: rotate(var(--startrotate));
+}
+
+.flake:nth-child(16) .shape::before {
+    content: var(--flake3);
+    font-size: 24px;
+}
+
+.flake:nth-child(17) {
+    --duration: 9217ms;
+    --delay: 3524ms;
+    --startrotate: 215deg;
+    --endrotate: 236deg;
+    --opacity: 0.38;
+    --R: 195;
+    --G: 204;
+    --B: 253;
+    animation: fall var(--duration) var(--delay) linear infinite;
+    left: -10vw;
+    transform: translateZ(-455px);
+}
+
+.flake:nth-child(17) .shape {
+    animation: rotate var(--duration) var(--delay) linear infinite;
+    color: rgba(0, 0, 0, var);
+    transform: rotate(var(--startrotate));
+}
+
+.flake:nth-child(17) .shape::before {
+    content: var(--flake1);
+    font-size: 24px;
+}
+
+.flake:nth-child(18) {
+    --duration: 8802ms;
+    --delay: 8080ms;
+    --startrotate: 282deg;
+    --endrotate: 70deg;
+    --opacity: 0.27;
+    --R: 196;
+    --G: 172;
+    --B: 235;
+    animation: fall var(--duration) var(--delay) linear infinite;
+    left: -13vw;
+    transform: translateZ(305px);
+}
+
+.flake:nth-child(18) .shape {
+    animation: rotate var(--duration) var(--delay) linear infinite;
+    color: rgba(0, 0, 0, var);
+    transform: rotate(var(--startrotate));
+}
+
+.flake:nth-child(18) .shape::before {
+    content: var(--flake3);
+    font-size: 18px;
+}
+
+.flake:nth-child(19) {
+    --duration: 8058ms;
+    --delay: 2246ms;
+    --startrotate: 220deg;
+    --endrotate: 270deg;
+    --opacity: 0.23;
+    --R: 181;
+    --G: 200;
+    --B: 251;
+    animation: fall var(--duration) var(--delay) linear infinite;
+    left: 40vw;
+    transform: translateZ(135px);
+}
+
+.flake:nth-child(19) .shape {
+    animation: rotate var(--duration) var(--delay) linear infinite;
+    color: rgba(0, 0, 0, var);
+    transform: rotate(var(--startrotate));
+}
+
+.flake:nth-child(19) .shape::before {
+    content: var(--flake3);
+    font-size: 29px;
+}
+
+.flake:nth-child(20) {
+    --duration: 9029ms;
+    --delay: 9338ms;
+    --startrotate: 150deg;
+    --endrotate: 296deg;
+    --opacity: 0.24;
+    --R: 202;
+    --G: 174;
+    --B: 255;
+    animation: fall var(--duration) var(--delay) linear infinite;
+    left: 28vw;
+    transform: translateZ(58px);
+}
+
+.flake:nth-child(20) .shape {
+    animation: rotate var(--duration) var(--delay) linear infinite;
+    color: rgba(0, 0, 0, var);
+    transform: rotate(var(--startrotate));
+}
+
+.flake:nth-child(20) .shape::before {
+    content: var(--flake1);
+    font-size: 30px;
+}
+
+.flake:nth-child(21) {
+    --duration: 9137ms;
+    --delay: 8337ms;
+    --startrotate: 272deg;
+    --endrotate: 74deg;
+    --opacity: 0.4;
+    --R: 204;
+    --G: 201;
+    --B: 227;
+    animation: fall var(--duration) var(--delay) linear infinite;
+    left: 4vw;
+    transform: translateZ(145px);
+}
+
+.flake:nth-child(21) .shape {
+    animation: rotate var(--duration) var(--delay) linear infinite;
+    color: rgba(0, 0, 0, var);
+    transform: rotate(var(--startrotate));
+}
+
+.flake:nth-child(21) .shape::before {
+    content: var(--flake1);
+    font-size: 20px;
+}
+
+.flake:nth-child(22) {
+    --duration: 8535ms;
+    --delay: 6043ms;
+    --startrotate: 276deg;
+    --endrotate: 64deg;
+    --opacity: 0.36;
+    --R: 171;
+    --G: 174;
+    --B: 246;
+    animation: fall var(--duration) var(--delay) linear infinite;
+    left: -25vw;
+    transform: translateZ(323px);
+}
+
+.flake:nth-child(22) .shape {
+    animation: rotate var(--duration) var(--delay) linear infinite;
+    color: rgba(0, 0, 0, var);
+    transform: rotate(var(--startrotate));
+}
+
+.flake:nth-child(22) .shape::before {
+    content: var(--flake1);
+    font-size: 18px;
+}
+
+.flake:nth-child(23) {
+    --duration: 9692ms;
+    --delay: 8833ms;
+    --startrotate: 251deg;
+    --endrotate: 186deg;
+    --opacity: 0.27;
+    --R: 179;
+    --G: 200;
+    --B: 230;
+    animation: fall var(--duration) var(--delay) linear infinite;
+    left: -12vw;
+    transform: translateZ(209px);
+}
+
+.flake:nth-child(23) .shape {
+    animation: rotate var(--duration) var(--delay) linear infinite;
+    color: rgba(0, 0, 0, var);
+    transform: rotate(var(--startrotate));
+}
+
+.flake:nth-child(23) .shape::before {
+    content: var(--flake3);
+    font-size: 24px;
+}
+
+.flake:nth-child(24) {
+    --duration: 9114ms;
+    --delay: 6118ms;
+    --startrotate: 275deg;
+    --endrotate: 18deg;
+    --opacity: 0.25;
+    --R: 198;
+    --G: 200;
+    --B: 217;
+    animation: fall var(--duration) var(--delay) linear infinite;
+    left: -27vw;
+    transform: translateZ(-404px);
+}
+
+.flake:nth-child(24) .shape {
+    animation: rotate var(--duration) var(--delay) linear infinite;
+    color: rgba(0, 0, 0, var);
+    transform: rotate(var(--startrotate));
+}
+
+.flake:nth-child(24) .shape::before {
+    content: var(--flake2);
+    font-size: 22px;
+}
+
+.flake:nth-child(25) {
+    --duration: 9210ms;
+    --delay: 4618ms;
+    --startrotate: 21deg;
+    --endrotate: 164deg;
+    --opacity: 0.32;
+    --R: 198;
+    --G: 202;
+    --B: 220;
+    animation: fall var(--duration) var(--delay) linear infinite;
+    left: 0vw;
+    transform: translateZ(119px);
+}
+
+.flake:nth-child(25) .shape {
+    animation: rotate var(--duration) var(--delay) linear infinite;
+    color: rgba(0, 0, 0, var);
+    transform: rotate(var(--startrotate));
+}
+
+.flake:nth-child(25) .shape::before {
+    content: var(--flake2);
+    font-size: 23px;
+}
+
+.flake:nth-child(26) {
+    --duration: 8766ms;
+    --delay: 3932ms;
+    --startrotate: 236deg;
+    --endrotate: 101deg;
+    --opacity: 0.39;
+    --R: 170;
+    --G: 177;
+    --B: 233;
+    animation: fall var(--duration) var(--delay) linear infinite;
+    left: -4vw;
+    transform: translateZ(367px);
+}
+
+.flake:nth-child(26) .shape {
+    animation: rotate var(--duration) var(--delay) linear infinite;
+    color: rgba(0, 0, 0, var);
+    transform: rotate(var(--startrotate));
+}
+
+.flake:nth-child(26) .shape::before {
+    content: var(--flake3);
+    font-size: 31px;
+}
+
+.flake:nth-child(27) {
+    --duration: 8087ms;
+    --delay: 5627ms;
+    --startrotate: 155deg;
+    --endrotate: 331deg;
+    --opacity: 0.23;
+    --R: 201;
+    --G: 171;
+    --B: 253;
+    animation: fall var(--duration) var(--delay) linear infinite;
+    left: -31vw;
+    transform: translateZ(212px);
+}
+
+.flake:nth-child(27) .shape {
+    animation: rotate var(--duration) var(--delay) linear infinite;
+    color: rgba(0, 0, 0, var);
+    transform: rotate(var(--startrotate));
+}
+
+.flake:nth-child(27) .shape::before {
+    content: var(--flake3);
+    font-size: 24px;
+}
+
+.flake:nth-child(28) {
+    --duration: 8690ms;
+    --delay: 9109ms;
+    --startrotate: 179deg;
+    --endrotate: 74deg;
+    --opacity: 0.29;
+    --R: 170;
+    --G: 187;
+    --B: 224;
+    animation: fall var(--duration) var(--delay) linear infinite;
+    left: 24vw;
+    transform: translateZ(203px);
+}
+
+.flake:nth-child(28) .shape {
+    animation: rotate var(--duration) var(--delay) linear infinite;
+    color: rgba(0, 0, 0, var);
+    transform: rotate(var(--startrotate));
+}
+
+.flake:nth-child(28) .shape::before {
+    content: var(--flake2);
+    font-size: 30px;
+}
+
+.flake:nth-child(29) {
+    --duration: 8559ms;
+    --delay: 2060ms;
+    --startrotate: 199deg;
+    --endrotate: 75deg;
+    --opacity: 0.36;
+    --R: 203;
+    --G: 190;
+    --B: 236;
+    animation: fall var(--duration) var(--delay) linear infinite;
+    left: 35vw;
+    transform: translateZ(324px);
+}
+
+.flake:nth-child(29) .shape {
+    animation: rotate var(--duration) var(--delay) linear infinite;
+    color: rgba(0, 0, 0, var);
+    transform: rotate(var(--startrotate));
+}
+
+.flake:nth-child(29) .shape::before {
+    content: var(--flake2);
+    font-size: 22px;
+}
+
+.flake:nth-child(30) {
+    --duration: 8085ms;
+    --delay: 4437ms;
+    --startrotate: 110deg;
+    --endrotate: 6deg;
+    --opacity: 0.25;
+    --R: 199;
+    --G: 171;
+    --B: 223;
+    animation: fall var(--duration) var(--delay) linear infinite;
+    left: 35vw;
+    transform: translateZ(-74px);
+}
+
+.flake:nth-child(30) .shape {
+    animation: rotate var(--duration) var(--delay) linear infinite;
+    color: rgba(0, 0, 0, var);
+    transform: rotate(var(--startrotate));
+}
+
+.flake:nth-child(30) .shape::before {
+    content: var(--flake1);
+    font-size: 20px;
+}
+
+.flake:nth-child(31) {
+    --duration: 8488ms;
+    --delay: 7199ms;
+    --startrotate: 74deg;
+    --endrotate: 256deg;
+    --opacity: 0.32;
+    --R: 197;
+    --G: 195;
+    --B: 241;
+    animation: fall var(--duration) var(--delay) linear infinite;
+    left: 29vw;
+    transform: translateZ(199px);
+}
+
+.flake:nth-child(31) .shape {
+    animation: rotate var(--duration) var(--delay) linear infinite;
+    color: rgba(0, 0, 0, var);
+    transform: rotate(var(--startrotate));
+}
+
+.flake:nth-child(31) .shape::before {
+    content: var(--flake3);
+    font-size: 20px;
+}
+
+.flake:nth-child(32) {
+    --duration: 9903ms;
+    --delay: 8499ms;
+    --startrotate: 76deg;
+    --endrotate: 21deg;
+    --opacity: 0.34;
+    --R: 193;
+    --G: 167;
+    --B: 239;
+    animation: fall var(--duration) var(--delay) linear infinite;
+    left: -28vw;
+    transform: translateZ(-120px);
+}
+
+.flake:nth-child(32) .shape {
+    animation: rotate var(--duration) var(--delay) linear infinite;
+    color: rgba(0, 0, 0, var);
+    transform: rotate(var(--startrotate));
+}
+
+.flake:nth-child(32) .shape::before {
+    content: var(--flake3);
+    font-size: 31px;
+}
+
+.flake:nth-child(33) {
+    --duration: 9755ms;
+    --delay: 5133ms;
+    --startrotate: 146deg;
+    --endrotate: 228deg;
+    --opacity: 0.32;
+    --R: 172;
+    --G: 187;
+    --B: 218;
+    animation: fall var(--duration) var(--delay) linear infinite;
+    left: 31vw;
+    transform: translateZ(-347px);
+}
+
+.flake:nth-child(33) .shape {
+    animation: rotate var(--duration) var(--delay) linear infinite;
+    color: rgba(0, 0, 0, var);
+    transform: rotate(var(--startrotate));
+}
+
+.flake:nth-child(33) .shape::before {
+    content: var(--flake1);
+    font-size: 29px;
+}
+
+.flake:nth-child(34) {
+    --duration: 9505ms;
+    --delay: 3514ms;
+    --startrotate: 249deg;
+    --endrotate: 215deg;
+    --opacity: 0.37;
+    --R: 186;
+    --G: 187;
+    --B: 240;
+    animation: fall var(--duration) var(--delay) linear infinite;
+    left: 29vw;
+    transform: translateZ(454px);
+}
+
+.flake:nth-child(34) .shape {
+    animation: rotate var(--duration) var(--delay) linear infinite;
+    color: rgba(0, 0, 0, var);
+    transform: rotate(var(--startrotate));
+}
+
+.flake:nth-child(34) .shape::before {
+    content: var(--flake1);
+    font-size: 20px;
+}
+
+.flake:nth-child(35) {
+    --duration: 9585ms;
+    --delay: 6800ms;
+    --startrotate: 187deg;
+    --endrotate: 150deg;
+    --opacity: 0.29;
+    --R: 193;
+    --G: 194;
+    --B: 237;
+    animation: fall var(--duration) var(--delay) linear infinite;
+    left: -25vw;
+    transform: translateZ(-467px);
+}
+
+.flake:nth-child(35) .shape {
+    animation: rotate var(--duration) var(--delay) linear infinite;
+    color: rgba(0, 0, 0, var);
+    transform: rotate(var(--startrotate));
+}
+
+.flake:nth-child(35) .shape::before {
+    content: var(--flake2);
+    font-size: 19px;
+}
+
+.flake:nth-child(36) {
+    --duration: 9412ms;
+    --delay: 4775ms;
+    --startrotate: 196deg;
+    --endrotate: 254deg;
+    --opacity: 0.26;
+    --R: 204;
+    --G: 165;
+    --B: 219;
+    animation: fall var(--duration) var(--delay) linear infinite;
+    left: 8vw;
+    transform: translateZ(-189px);
+}
+
+.flake:nth-child(36) .shape {
+    animation: rotate var(--duration) var(--delay) linear infinite;
+    color: rgba(0, 0, 0, var);
+    transform: rotate(var(--startrotate));
+}
+
+.flake:nth-child(36) .shape::before {
+    content: var(--flake3);
+    font-size: 26px;
+}
+
+.flake:nth-child(37) {
+    --duration: 9736ms;
+    --delay: 6407ms;
+    --startrotate: 213deg;
+    --endrotate: 327deg;
+    --opacity: 0.25;
+    --R: 195;
+    --G: 172;
+    --B: 255;
+    animation: fall var(--duration) var(--delay) linear infinite;
+    left: 38vw;
+    transform: translateZ(448px);
+}
+
+.flake:nth-child(37) .shape {
+    animation: rotate var(--duration) var(--delay) linear infinite;
+    color: rgba(0, 0, 0, var);
+    transform: rotate(var(--startrotate));
+}
+
+.flake:nth-child(37) .shape::before {
+    content: var(--flake3);
+    font-size: 18px;
+}
+
+.flake:nth-child(38) {
+    --duration: 8491ms;
+    --delay: 9087ms;
+    --startrotate: 34deg;
+    --endrotate: 61deg;
+    --opacity: 0.29;
+    --R: 203;
+    --G: 183;
+    --B: 235;
+    animation: fall var(--duration) var(--delay) linear infinite;
+    left: -7vw;
+    transform: translateZ(40px);
+}
+
+.flake:nth-child(38) .shape {
+    animation: rotate var(--duration) var(--delay) linear infinite;
+    color: rgba(0, 0, 0, var);
+    transform: rotate(var(--startrotate));
+}
+
+.flake:nth-child(38) .shape::before {
+    content: var(--flake2);
+    font-size: 32px;
+}
+
+.flake:nth-child(39) {
+    --duration: 9157ms;
+    --delay: 6153ms;
+    --startrotate: 142deg;
+    --endrotate: 278deg;
+    --opacity: 0.32;
+    --R: 180;
+    --G: 203;
+    --B: 231;
+    animation: fall var(--duration) var(--delay) linear infinite;
+    left: -20vw;
+    transform: translateZ(126px);
+}
+
+.flake:nth-child(39) .shape {
+    animation: rotate var(--duration) var(--delay) linear infinite;
+    color: rgba(0, 0, 0, var);
+    transform: rotate(var(--startrotate));
+}
+
+.flake:nth-child(39) .shape::before {
+    content: var(--flake3);
+    font-size: 23px;
+}
+
+.flake:nth-child(40) {
+    --duration: 8161ms;
+    --delay: 5870ms;
+    --startrotate: 273deg;
+    --endrotate: 151deg;
+    --opacity: 0.25;
+    --R: 203;
+    --G: 175;
+    --B: 241;
+    animation: fall var(--duration) var(--delay) linear infinite;
+    left: 15vw;
+    transform: translateZ(388px);
+}
+
+.flake:nth-child(40) .shape {
+    animation: rotate var(--duration) var(--delay) linear infinite;
+    color: rgba(0, 0, 0, var);
+    transform: rotate(var(--startrotate));
+}
+
+.flake:nth-child(40) .shape::before {
+    content: var(--flake3);
+    font-size: 22px;
+}
+
+@keyframes fall {
+    0% {
+        top: -100vh;
+    }
+
+    100% {
+        top: 100vh;
+    }
+}
+
+@keyframes sway {
+    0% {
+        left: 40%;
+    }
+
+    100% {
+        left: 60%;
+    }
+}
+
+@keyframes rotate {
+    to {
+        transform: rotate(var(--endrotate));
+    }
+}

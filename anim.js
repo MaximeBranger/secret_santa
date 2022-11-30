@@ -37,7 +37,7 @@ const svgAnimation_two = () => {
 		targets: LANDING.intro,
 		duration: 2000,
 		easing: "easeInOutSine",
-		translateY: "calc(-300vh - 130px)"
+		translateY: "calc(-300vh - 135px)"
 	});
 
 	anime({
