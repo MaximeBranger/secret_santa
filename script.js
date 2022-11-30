@@ -37,19 +37,12 @@ function getResults() {
 }
 
 function fillSelect() {
-    if (remaining_gifter.length < 1) {
-        select.innerHTML = "";
-        runButton.style.display = "none";
-        getResults();
-    } else {
-        select.innerHTML = "";
-        for (let index = 0; index < remaining_gifter.length; index++) { 
-            const opt = document.createElement("option");
-            opt.text = remaining_gifter[index];;
-            select.appendChild(opt);
-        }
+    select.innerHTML = "";
+    for (let index = 0; index < remaining_gifter.length; index++) { 
+        const opt = document.createElement("option");
+        opt.text = remaining_gifter[index];;
+        select.appendChild(opt);
     }
-
 }
 
 function tirage() {
@@ -65,10 +58,17 @@ function tirage() {
 }
 
 function next() {
-    runButton.style.display = "block";
     validateButton.style.display = "none";
-    tirageDiv.innerHTML = "";
-    fillSelect();
+
+    if (remaining_gifter.length < 1) {
+        select.innerHTML = "";
+        tirageDiv.innerHTML = "Le tirage est terminé !";
+        getResults();
+    } else {
+        runButton.style.display = "block";
+        tirageDiv.innerHTML = "";
+        fillSelect();
+    }
 }
 
 runButton.addEventListener('click', tirage);
