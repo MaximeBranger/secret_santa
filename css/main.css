@@ -162,6 +162,12 @@ body {
     font-size: 4rem;
     margin-bottom: 2rem;
     font-family: 'Courgette';
+    background-color: #fff;
+    color: #fff;
+}
+
+.tirage:hover {
+    color: red;
 }
 
 .run, .validate {
