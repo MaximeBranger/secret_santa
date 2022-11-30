@@ -5,6 +5,7 @@ body {
     margin: 0 auto;
     max-width: 100vw;
     height: 100vh;
+    background-color: white;
 }
 
 :root {
@@ -39,15 +40,18 @@ body {
     position: relative;
 }
 
+.intro-screen_1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 .intro-screen__titel {
     height: 100vh;
     width: 100%;
     display: block;
     position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
 }
 
 .intro-screen__shape {
@@ -65,8 +69,25 @@ body {
     fill: white;
 }
 
-.intro-screen_bg2, .intro-screen__shape {
+.intro-screen__shape {
     background-color: #B7D1DE;
+}
+
+.intro-screen_bg2 {
+    background-color: white;
+    height: calc(100vh - 13rem);
+}
+
+.intro-screen_2 {
+    height: calc(100vh - 13rem);
+    background-image: url('../img/background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .loader-img-wrapper {
@@ -80,16 +101,78 @@ body {
     transform: translateY(0);
 }
 
-.intro-screen .heading--h1 {
-    opacity: 0;
-    animation: 2s ease 2s forwards zooming;
-    color: var(--red);
+.heading {
+    text-align: center;
+    font-family: 'Courgette', sans-serif;
 }
 
 .heading--h1 {
-    text-align: center;
-    font-family: 'Courgette', sans-serif;
+    opacity: 0;
+    animation: 2s ease 2s forwards zooming;
+    color: var(--red);
     font-size: 7rem;
+}
+
+.heading--h2 {
+    font-size: 7rem;
+    opacity: 0;
+    animation: 2s ease 7s forwards headingAppearance;
+}
+
+.heading--h3 {
+    font-size: 4rem;
+    margin-bottom: 3rem;
+}
+
+.main-header {
+    color: white;
+    padding-block: 1.5rem;
+    text-shadow: 0 0 3px #181818;
+}
+
+.sorting-section {
+    max-width: 50rem;
+    width: 100%;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+
+    transform: translateY(-7rem);
+
+    background-color: var(--red);
+    padding: 4rem 10rem;
+    border-radius: 2rem;
+
+    color: white;
+
+    box-shadow: 0.4rem 0.4rem 10px rgba(24, 24, 24, 0.1)
+}
+
+.select--style {
+    border: transparent;
+    padding-block: 0.5rem;
+    padding-left: 0.5rem;
+    color: #323232;
+
+    margin-bottom: 2rem;
+}
+
+.tirage {
+    text-align: center;
+    font-size: 4rem;
+    margin-bottom: 2rem;
+    font-family: 'Courgette';
+}
+
+.run, .validate {
+    padding-block: 1rem;
+    padding-inline: 5rem;
+    margin-inline: auto;
+    background-color: #181818;
+    border: transparent;
+    color: #FECD6E;
+
+    width: fit-content;
 }
 
 @keyframes zooming {
