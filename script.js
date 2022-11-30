@@ -18,28 +18,60 @@ const people = [
     "Victorien",
     "Yannice"
 ]
+let remaining_gifter = people.map(p => p)
+let remaining_dest = people.map(p => p)
 
+let results = {}
+
+const runButton = document.querySelector('.run');
+const validateButton = document.querySelector('.validate');
+const tirageDiv = document.querySelector('.tirage');
+const select = document.querySelector("#user");
 
 Array.prototype.random = function () {
     return this[Math.floor((Math.random()*this.length))];
 }
 
-function tirage() {
-    let remaining_people = people.map(p => p)
-    
-    for (let index = 0; index < people.length; index++) {
-        const someone = people[index];
-        let candidates = remaining_people.filter(p => p != someone);
-        let candidate = candidates.random();
-        console.log(calcSHA1(someone) + '->' + candidate);
-        tirageDiv.innerHTML+= 'Tirage pour '+ someone + ' effectué ! <a href="' + window.location.origin + '/u.html?n='+calcSHA1(someone)+'">Lien à partager</a> <br>';
-    
-        remaining_people = remaining_people.filter(p => p != candidate)
-    }
+function getResults() {
+    console.log(results);
 }
 
-const runButton = document.querySelector('.run');
-const tirageDiv = document.querySelector('.tirage');
-runButton.addEventListener('click', tirage);
+function fillSelect() {
+    if (remaining_gifter.length < 1) {
+        select.innerHTML = "";
+        runButton.style.display = "none";
+        getResults();
+    } else {
+        select.innerHTML = "";
+        for (let index = 0; index < remaining_gifter.length; index++) { 
+            const opt = document.createElement("option");
+            opt.text = remaining_gifter[index];;
+            select.appendChild(opt);
+        }
+    }
 
-console.log();
+}
+
+function tirage() {
+    const someone = select.value;
+    let candidates = remaining_dest.filter(p => p != someone);
+    let candidate = candidates.random();
+    tirageDiv.innerHTML = candidate;
+    remaining_dest = remaining_dest.filter(p => p != candidate)
+    remaining_gifter = remaining_gifter.filter(p => p != someone)
+    runButton.style.display = "none";
+    validateButton.style.display = "block";
+    results[someone] = candidate;
+}
+
+function next() {
+    runButton.style.display = "block";
+    validateButton.style.display = "none";
+    tirageDiv.innerHTML = "";
+    fillSelect();
+}
+
+runButton.addEventListener('click', tirage);
+validateButton.addEventListener('click', next);
+
+fillSelect();
