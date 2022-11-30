@@ -115,6 +115,8 @@ body {
 
 .heading--h2 {
     font-size: 7rem;
+    opacity: 0;
+    animation: 2s ease 7s forwards headingAppearance;
 }
 
 .heading--h3 {
