@@ -28,6 +28,9 @@ const validateButton = document.querySelector('.validate');
 const tirageDiv = document.querySelector('.tirage');
 const select = document.querySelector("#user");
 
+runButton.addEventListener('click', tirage);
+validateButton.addEventListener('click', next);
+
 Array.prototype.random = function () {
     return this[Math.floor((Math.random()*this.length))];
 }
@@ -36,7 +39,7 @@ function getResults() {
     console.log(results);
 }
 
-function fillSelect() {
+function updateSelect() {
     select.innerHTML = "";
     for (let index = 0; index < remaining_gifter.length; index++) { 
         const opt = document.createElement("option");
@@ -46,15 +49,14 @@ function fillSelect() {
 }
 
 function tirage() {
-    const someone = select.value;
-    let candidates = remaining_dest.filter(p => p != someone);
-    let candidate = candidates.random();
+    const candidates = remaining_dest.filter(p => p != select.value);
+    const candidate = candidates.random();
     tirageDiv.innerHTML = candidate;
     remaining_dest = remaining_dest.filter(p => p != candidate)
-    remaining_gifter = remaining_gifter.filter(p => p != someone)
+    remaining_gifter = remaining_gifter.filter(p => p != select.value)
     runButton.style.display = "none";
     validateButton.style.display = "block";
-    results[someone] = candidate;
+    results[select.value] = candidate;
 }
 
 function next() {
@@ -67,11 +69,9 @@ function next() {
     } else {
         runButton.style.display = "block";
         tirageDiv.innerHTML = "";
-        fillSelect();
+        updateSelect();
     }
 }
 
-runButton.addEventListener('click', tirage);
-validateButton.addEventListener('click', next);
 
-fillSelect();
+updateSelect();
