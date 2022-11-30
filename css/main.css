@@ -40,7 +40,7 @@ body {
     position: relative;
 }
 
-.intro-screen_1 {
+.intro-screen_1, .intro-screen_2 {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -52,6 +52,7 @@ body {
     width: 100%;
     display: block;
     position: relative;
+    background-color: white;
 }
 
 .intro-screen__shape {
@@ -69,6 +70,10 @@ body {
     fill: white;
 }
 
+.shape_2 {
+    fill: white;
+}
+
 .intro-screen__shape {
     background-color: #B7D1DE;
 }
@@ -78,7 +83,7 @@ body {
     height: calc(100vh - 13rem);
 }
 
-.intro-screen_2 {
+.intro-screen_3 {
     height: calc(100vh - 13rem);
     background-image: url('../img/background.jpg');
     background-size: cover;
@@ -124,10 +129,42 @@ body {
     margin-bottom: 3rem;
 }
 
+.heading--h4 {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+}
+
 .main-header {
     color: white;
+    background-color: #B7D1DE;
     padding-block: 1.5rem;
     text-shadow: 0 0 3px #181818;
+}
+
+.rules {
+    margin-top: 5rem;
+    margin-bottom: 8rem;
+}
+
+.christmas-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4rem;
+
+    max-width: 110rem;
+    width: 100%;
+    margin-inline: auto;
+}
+
+.card {
+    width: 30rem;
+    background-color: var(--red);
+    color: white;
+    padding: 5rem;
+    border-radius: 1.5rem;
+    height: 100%;
+
+    box-shadow: 0.4rem 0.4rem 1rem rgba(24, 24, 24, 0.2)
 }
 
 .sorting-section {
@@ -167,7 +204,7 @@ body {
 }
 
 .tirage:hover {
-    color: red;
+    color: var(--red);
 }
 
 .run, .validate {

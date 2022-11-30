@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
 
@@ -35,8 +37,7 @@
         <!-- DIV ANIMATION SVG - 1 -->
         <div class="intro-screen__shape">
 
-            <svg class="shape shape_1" width="100%" height="100vh" preserveAspectRatio="none"
-                viewBox="0 0 1440 800">
+            <svg class="shape shape_1" width="100%" height="100vh" preserveAspectRatio="none" viewBox="0 0 1440 800">
                 <path
                     d="M -44,-50 C -52.71,28.52 15.86,8.186 184,14.69 383.3,22.39 462.5,12.58 638,14 835.5,15.6 987,6.4 1194,13.86 1661,30.68 1652,-36.74 1582,-140.1 1512,-243.5 15.88,-589.5 -44,-50 Z"
                     pathdata:id="M -44,-50 C -137.1,117.4 67.86,445.5 236,452 435.3,459.7 500.5,242.6 676,244 873.5,245.6 957,522.4 1154,594 1593,753.7 1793,226.3 1582,-126 1371,-478.3 219.8,-524.2 -44,-50 Z">
@@ -47,33 +48,84 @@
             <!-- BALISE MAIN -->
             <main>
 
-                <!-- BALISE HEADER -->
-                <header class="main-header">
-                    <h2 class="heading heading--h2">
-                        Secret Santa
-                    </h2>
-                </header>
-
                 <!-- DIV ANIMATION BACKGROUND - 2 -->
                 <div class="intro-screen intro-screen_bg2">
+
+                    <header class="main-header">
+                        <h2 class="heading heading--h2">
+                            Secret Santa
+                        </h2>
+                    </header>
 
                     <!-- DIV ANIMATION TITLE - 2 -->
                     <div class="intro-screen__titel intro-screen_2">
 
                         <!-- SECTION HERO -->
-                        <section class="sorting-section">
-                            <h3 class="heading heading--h3">Qui es-tu ?</h2>
-                            <label for="user" class="screen-reader-text">Choisis ton nom</label>
-                            <select name="user" id="user" class="select--style"> </select>
+                        <section class="instruction-section">
+                            <h3 class="heading heading--h3 rules">Les règles du jeu</h2>
 
-                            <button class="run"><strong>Oh oh oh !</strong></button>
+                                <div class="christmas-cards">
+                                    <div class="card">
+                                        <h4 class="heading heading--h4">Celui qui offre</h4>
+                                        <p>Choisissez votre prénom dans le sélecteur afin de ne pas tomber sur votre propre nom lors du tirage au sort</p>
+                                    </div>
+                                    <div class="card">
+                                        <h4 class="heading heading--h4">Celui qui reçoit</h4>
+                                        <p>Le nom de la personne que vous tirerez au sort sera caché dans un bandeau blanc afin d'éviter les coups d'œil indiscret. Il sera révélé quand vous passerez la souris dessus.</p>
+                                    </div>
+                                    <div class="card">
+                                        <h4 class="heading heading--h4">Celui qui s'en va</h4>
+                                        <p>Avant de laisser votre place à la personne suivante, n'oubliez pas d'appuyer sur le bouton "suivant" pour que votre résultat reste secret !</p>
+                                    </div>
+                                </div>
+                                
 
-                            <p class="offre"></p>
-                            <p class="tirage"></p>
-
-                            <p class="instruction" hidden>Attention, tu ne pourras pas récupérer cette information. Une fois mémorisée, penses à appuyer sur le bouton suivant avant de laisser ta place !</p>
-                            <button class="validate" hidden><strong>Suivant !</strong></button>
+                                <button class="start_1">Let's go !</button>
                         </section>
+
+                    </div>
+
+                    <div class="intro-screen__shape intro-screen_shape_2">
+
+                        <svg class="shape shape_2" width="100%" height="100vh" preserveAspectRatio="none"
+                            viewBox="0 0 1440 800">
+                            <path
+                                d="M -44,-50 C -52.71,28.52 15.86,8.186 184,14.69 383.3,22.39 462.5,12.58 638,14 835.5,15.6 987,6.4 1194,13.86 1661,30.68 1652,-36.74 1582,-140.1 1512,-243.5 15.88,-589.5 -44,-50 Z"
+                                pathdata:id="M -44,-50 C -137.1,117.4 67.86,445.5 236,452 435.3,459.7 500.5,242.6 676,244 873.5,245.6 957,522.4 1154,594 1593,753.7 1793,226.3 1582,-126 1371,-478.3 219.8,-524.2 -44,-50 Z">
+                            </path>
+                        </svg>
+
+                        <!-- DIV ANIMATION BACKGROUND - 3 -->
+                        <div class="intro-screen" id="intro-screen_bg3">
+
+                            <header class="main-header">
+                                <h2 class="heading heading--h2">
+                                    Secret Santa
+                                </h2>
+                            </header>
+
+                            <!-- DIV ANIMATION TITLE - 3 -->
+                            <div class="intro-screen__titel intro-screen_3">
+                                <section class="sorting-section">
+                                    <h3 class="heading heading--h3">Qui es-tu ?</h2>
+                                        <label for="user" class="screen-reader-text">Choisis ton nom</label>
+                                        <select name="user" id="user" class="select--style"> </select>
+        
+                                        <button class="run"><strong>Oh oh oh !</strong></button>
+        
+                                        <p class="offre"></p>
+                                        <p class="tirage"></p>
+        
+                                        <p class="instruction" hidden>Attention, tu ne pourras pas récupérer cette information.
+                                            Une fois mémorisée, penses à appuyer sur le bouton suivant avant de laisser ta place
+                                            !</p>
+                                        <button class="validate" hidden><strong>Suivant !</strong></button>
+                                </section>
+                            </div>
+
+                        </div>
+
+
 
                     </div>
 
@@ -88,4 +140,5 @@
     <script src="anime.min.js"></script>
     <script src="anim.js"></script>
 </body>
+
 </html>

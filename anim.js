@@ -22,3 +22,30 @@ const svgAnimation = () => {
 };
 
 OPENING.animation.addEventListener("animationend", svgAnimation);
+
+const LANDING = {};
+LANDING.intro = document.querySelector(".intro-screen");
+LANDING.continue = LANDING.intro.querySelector(".intro-screen__shape");
+LANDING.plop = LANDING.continue.querySelector(".start_1")
+LANDING.test = LANDING.continue.querySelector(".intro-screen_shape_2")
+LANDING.path = LANDING.test.querySelector("path");
+
+const svgAnimation_two = () => {
+	console.log("Animation 2");
+
+	anime({
+		targets: LANDING.intro,
+		duration: 2000,
+		easing: "easeInOutSine",
+		translateY: "calc(-300vh - 130px)"
+	});
+
+	anime({
+		targets: LANDING.path,
+		duration: 1500,
+		easing: "easeInOutSine",
+		d: LANDING.path.getAttribute("pathdata:id")
+	});
+};
+
+LANDING.plop.addEventListener("click", svgAnimation_two);
