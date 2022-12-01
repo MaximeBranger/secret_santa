@@ -218,6 +218,7 @@ body {
     padding-block: 2rem;
     padding-inline: 10rem;
     text-shadow: 0 0 3px #181818;
+    cursor: pointer;
 }
 
 .sorting-section {
@@ -268,8 +269,8 @@ body {
     background-color: #181818;
     border: transparent;
     color: #FECD6E;
-
     width: fit-content;
+    cursor: pointer;
 }
 
 @keyframes zooming {
