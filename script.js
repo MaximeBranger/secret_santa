@@ -18,6 +18,9 @@ const people = [
     "Victorien",
     "Yannice"
 ]
+
+const players = new Array();
+
 let remaining_gifter = people.map(p => p)
 let remaining_dest = people.map(p => p)
 
@@ -29,6 +32,10 @@ const offreP = document.querySelector('.offre');
 const tirageP = document.querySelector('.tirage');
 const instructionP = document.querySelector('.instruction');
 const select = document.querySelector("#user");
+const addForm = document.querySelector("#add-form");
+const playerListDiv = document.querySelector(".player-list");
+
+addForm.addEventListener("submit", addPlayer);
 
 runButton.addEventListener('click', tirage);
 validateButton.addEventListener('click', next);
@@ -73,6 +80,7 @@ function next() {
         select.textContent = "";
         tirageP.textContent = "Le tirage est terminé !";
         getResults();
+        localStorage.setItem('results', results);
     } else {
         runButton.style.display = "block";
         select.style.display = "block";
@@ -81,5 +89,37 @@ function next() {
     }
 }
 
+function addPlayer(ev) {
+    ev.preventDefault();
+    const name = ev.target["new-name"].value
+    if (name === "") {
+        return;
+    } 
+    players.push(name);
+    
+    ev.target["new-name"].value = "";
+    
+    const playerA = document.createElement("article");
+
+    const playerP = document.createElement("p");
+    playerP.classList.add("player");
+    playerP.textContent = name;
+    
+    const delButton = document.createElement("button");
+    delButton.classList.add("player-remove");
+    delButton.textContent = "X";
+    delButton.addEventListener('click', delPlayer);
+
+    playerA.appendChild(playerP);
+    playerA.appendChild(delButton);
+    playerListDiv.appendChild(playerA);
+}
+
+function delPlayer(ev) {
+    ev.preventDefault();
+    const playerP = ev.path[1];
+    playerListDiv.removeChild(playerP);
+    // TODO : remove from players table
+}
 
 updateSelect();
